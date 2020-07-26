@@ -1,12 +1,7 @@
 import css from "styled-jsx/css";
 
 import {
-  CLOUDS,
-  PACIFIC_BLUE,
-  CONCRETE,
-  ALABASTER,
-  ASBESTOS,
-  POMEGRANATE
+  CLOUDS
 } from "./colors";
 
 export const generalStyles = css.global`

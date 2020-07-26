@@ -21,7 +21,7 @@ export default class AuthService {
     url += "?response_type=token";
     url += "&client_id=" +  encodeURIComponent(config.spotifyClientId);
     url += "&scope=" + encodeURIComponent(scopesArray.join(" "));
-    url += "redirect_uri=" + encodeURIComponent(config.spotifyRedirectUri);
+    url += "&redirect_uri=" + encodeURIComponent(config.spotifyRedirectUri);
     url += "&state=" + encodeURIComponent(state);
 
     window.location.href = url;
@@ -40,7 +40,7 @@ export default class AuthService {
       const { access_token, state } = getHashParams();
       const auth_state = localStorage.getItem('auth_state');
 
-      if (state === nulll || state !== auth_state) {
+      if (state === null || state !== auth_state) {
         reject(new Error('The state doesn\'t match'));
       }
 

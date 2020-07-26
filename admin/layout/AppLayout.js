@@ -13,7 +13,7 @@ import {
   semanticStyles
 } from "../utils/globalStyles";
 
-class Layout extends Component {
+class AppLayout extends Component {
   constructor(props) {
     super(props);
     this.state = { isAuthenticated: false, loggedUser: {} };
@@ -74,8 +74,8 @@ class Layout extends Component {
   }
 }
 
-Layout.propTypes = {
+AppLayout.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default Layout;
+export default AppLayout;
