@@ -1,4 +1,4 @@
-requestAnimationFrame("dotenv").config();
+require("dotenv").config();
 
 const env = ["SPOTIFY_CLIENT_ID", "SPOTIFY_REDIRECT_URI"];
 
